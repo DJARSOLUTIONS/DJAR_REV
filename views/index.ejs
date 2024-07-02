@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startups</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Startup Directory</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Startup Name</th>
+        <th>Domain</th>
+        <th>Owner Name</th>
+        <th>Owner Email</th>
+        <th>Owner Phone</th>
+        <th>Details</th>
+        <th>Funding Goal</th>
+        <th>Pitch Video</th>
+        <th>Prototype Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% startups.forEach(startup => { %>
+        <tr>
+          <td><%= startup.startupName %></td>
+          <td><%= startup.startupDomain %></td>
+          <td><%= startup.ownerName %></td>
+          <td><%= startup.ownerEmail %></td>
+          <td><%= startup.ownerPhone %></td>
+          <td><%= startup.startupDetails %></td>
+          <td><%= startup.fundingGoal %></td>
+          <td><a href="<%= startup.pitchVideo %>" target="_blank">Video</a></td>
+          <td><a href="<%= startup.prototypeLink %>" target="_blank">Prototype</a></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</body>
+</html>
