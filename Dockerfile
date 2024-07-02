@@ -13,11 +13,6 @@ RUN npm install
 # Copy the rest of the application code (excluding node_modules)
 COPY . .
 
-# Build stage - optimized for building the app
-# Not needed for running the app, comment out if not required
-RUN npm run build
-# Replace with your build command if needed
-
 # Slim image for production (comment out builder stage if used)
 FROM node:alpine
 
