@@ -9,7 +9,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://DJARSOLUTIONS:SOLUTIONDJAR@djar-solutions.2vznu9i.mongodb.net/?retryWrites=true&w=majority&appName=DJAR-SOLUTIONS', {
+mongoose.connect('mongodb+srv://DJARSOLUTIONS:SOLUTIONDJAR@djar-solutions.2vznu9i.mongodb.net/?retryWrites=true&w=majority&appName=DJAR-SOLUTIONS', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
