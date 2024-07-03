@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 // mongodb://localhost/startup
-mongoose.connect('mongodb://DJARSOLUTIONS+srv:SOLUTIONDJAR@djar-solutions.2vznu9i.mongodb.net/?retryWrites=true&w=majority&appName=DJAR-SOLUTIONS', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://DJARSOLUTIONS+srv:SOLUTIONDJAR@djar-solutions.2vznu9i.mongodb.net/?retryWrites=true&w=majority&appName=DJAR-SOLUTIONS', {useNewUrlParser: true, useUnifiedTopology: true});
 
 app.post('/signup', async (req, res) => {
   const { name, email, password, phone} = req.body;
