@@ -8,7 +8,7 @@ const port = process.env.PORT || 3006;
 
 // Replace with your MongoDB connection URI
 // const uri = "mongodb://localhost:27017/form-database";
-const uri = "mongodb://DJARSOLUTIONS:SOLUTIONDJAR@djar-solutions.2vznu9i.mongodb.net/?retryWrites=true&w=majority&appName=DJAR-SOLUTIONS";
+const uri = "mongodb+srv://DJARSOLUTIONS:SOLUTIONDJAR@djar-solutions.2vznu9i.mongodb.net/?retryWrites=true&w=majority&appName=DJAR-SOLUTIONS";
 
 const Startup = require('./formmodel/model'); // Import the Startup model
 
